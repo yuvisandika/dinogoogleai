@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Splash">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/hotel1"
+            android:scaleType="centerCrop"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/i1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:src="#fff"
+            android:layout_width="220dp"
+            android:layout_height="220dp"/>
+
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_width="190dp"
+            android:layout_height="190dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="55dp"
+            android:src="@drawable/ic_maps"/>
+
+        <TextView
+            android:id="@+id/t1"
+            android:layout_below="@id/i1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/rounded"
+            android:backgroundTint="#2196F3"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:padding="5dp"
+            android:text="Aplikasi Sistem Informasi Geografis\nLokasi Hotel\nJambi"
+            />
+
+
+        <Button
+            android:id="@+id/btn_user"
+            android:layout_above="@+id/btn_admin"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="5dp"
+            android:backgroundTint="#2196F3"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="Masuk Kehalaman Utama"/>
+
+        <TextView
+            android:id="@+id/btn_admin"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_width="170dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="#fff"
+            android:text="LOGIN ADMIN"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

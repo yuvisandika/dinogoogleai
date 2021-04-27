@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".About"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.3"
+            android:id="@+id/a"
+            android:src="@drawable/logo_unama"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:textSize="20dp"
+            android:text="Aplikasi ini merupakan aplikasi
+            Sistem Informasi Geografis
+            Lokasi Pencarian Hotel \nDi Kota Jambi"/>
+
+        <TextView
+            android:id="@+id/holow"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:textColor="#000"
+            android:textSize="20dp"
+            android:text=" "/>
+        <TextView
+            android:layout_below="@+id/holow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:text=" Dirancang dan Dikembangkan Oleh Jordan Pratama"/>
+
+        <TextView
+            android:layout_above="@+id/wa"
+            android:id="@+id/kontak"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textSize="15dp"
+            android:text="Hubungi Admin Untuk Penambahan Lokasi"/>
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/wa"
+            android:layout_above="@+id/btnadmin"
+            android:layout_toLeftOf="@+id/nowa"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/wa"/>
+        <TextView
+            android:id="@+id/nowa"
+            android:layout_above="@+id/btnadmin"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="+62 822-8144-2370"/>
+        <Button
+            android:id="@+id/btnadmin"
+            android:onClick="onCall"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="#4CA3DD"
+            android:text="ADMIN"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:textSize="20dp"/>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

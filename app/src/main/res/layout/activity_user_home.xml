@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserHome"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:id="@+id/top"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/r1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/a1"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/hotel1" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/i1"
+                    android:layout_centerInParent="true"
+                    android:src="#fff"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"/>
+                <ImageView
+                    android:id="@+id/g1"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_centerInParent="true"
+                    android:text="ADMIN"
+                    android:textSize="30dp"
+                    android:src="@drawable/splash_user"
+                    android:gravity="center"/>
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_below="@+id/r1"
+                android:id="@+id/bt1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="#C5C5C5" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="6dp"
+                android:layout_above="@id/t1"
+                android:background="#fff"/>
+            <View
+                android:id="@+id/t2"
+                android:layout_width="match_parent"
+                android:layout_height="6dp"
+                android:layout_below="@id/t1"
+                android:background="#fff"/>
+            <TextView
+                android:id="@+id/t1"
+                android:layout_below="@+id/r1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:background="#2196F3"
+                android:textColor="#fff"
+                android:text="Aplikasi SIG Lokasi Hotel Jambi"
+                />
+            <GridLayout
+                android:layout_below="@id/t2"
+                android:columnCount="2"
+                android:rowCount="2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <!--1-->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card1"
+                    android:layout_width="0dp"
+                    android:layout_height="170dp"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    app:cardElevation="8dp"
+                    app:cardCornerRadius="30dp">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#4CAF50">
+
+                        <ImageView
+                            android:layout_width="110dp"
+                            android:layout_height="110dp"
+                            android:layout_margin="20dp"
+                            android:src="@drawable/splash_user"
+                            android:layout_centerInParent="true"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="17dp"
+                            android:layout_alignParentBottom="true"
+                            android:textSize="17dp"
+                            android:gravity="center"
+                            android:textColor="#ffff"
+                            android:textStyle="bold"
+                            android:text="Lokasi Penginapan"/>
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+                <!--2-->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card2"
+                    android:layout_width="0dp"
+                    android:layout_height="170dp"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    app:cardElevation="8dp"
+                    app:cardCornerRadius="30dp">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#4CAF50">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="90dp"
+                            android:layout_height="90dp"
+                            android:src="#fff"
+                            android:layout_centerInParent="true"/>
+                        <pl.droidsonroids.gif.GifImageView
+                            android:layout_width="90dp"
+                            android:layout_height="90dp"
+                            android:layout_margin="20dp"
+                            android:src="@drawable/ic_maps"
+                            android:layout_centerInParent="true"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_alignParentBottom="true"
+                            android:textSize="17dp"
+                            android:gravity="center"
+                            android:textColor="#fff"
+                            android:textStyle="bold"
+                            android:text="Google Maps"/>
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+                <!--3-->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card3"
+                    android:layout_width="0dp"
+                    android:layout_height="170dp"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    app:cardElevation="8dp"
+                    app:cardCornerRadius="30dp">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#2196F3">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="90dp"
+                            android:layout_height="90dp"
+                            android:src="#fff"
+                            android:layout_centerInParent="true"/>
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_margin="20dp"
+                            android:src="@drawable/ic_about"
+                            android:layout_centerInParent="true"
+                            app:tint="#000" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_alignParentBottom="true"
+                            android:textSize="17dp"
+                            android:gravity="center"
+                            android:textColor="#fff"
+                            android:textStyle="bold"
+                            android:text="Tentang Aplikasi"/>
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+                <!--4-->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card4"
+                    android:layout_width="0dp"
+                    android:layout_height="170dp"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    app:cardElevation="8dp"
+                    app:cardCornerRadius="30dp">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#ed1c24">
+
+                        <pl.droidsonroids.gif.GifImageView
+                            android:layout_width="150dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/ic_exit"
+                            android:layout_centerInParent="true"/>
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+            </GridLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</LinearLayout>

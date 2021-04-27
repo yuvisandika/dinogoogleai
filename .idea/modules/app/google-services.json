@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "157034277972",
+    "project_id": "dbhotel-ccdea",
+    "storage_bucket": "dbhotel-ccdea.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:157034277972:android:eb55fc133829c640bf11c1",
+        "android_client_info": {
+          "package_name": "com.example.sig_hotel_jambi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "157034277972-f21tf6j44nh1ma5idmgbtqkubs01n441.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.sig_hotel_jambi",
+            "certificate_hash": "826488fd46ac703fb7819bc7cd8e71fc455e3120"
+          }
+        },
+        {
+          "client_id": "157034277972-ddihb2jppqqo6km1tjhhcuu5t1j5qr96.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCkyD2H893Oga1ofISUukgHmlMjAljvh_Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "157034277972-ddihb2jppqqo6km1tjhhcuu5t1j5qr96.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
